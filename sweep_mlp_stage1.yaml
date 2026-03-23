@@ -1,0 +1,42 @@
+entity: lui-vitarius-slovak-university-of-technology
+project: NSIETE_credit
+program: train_mlp.py
+method: random
+metric:
+  name: best_val_cost_per_sample_tuned_threshold
+  goal: minimize
+parameters:
+  experiment_name:
+    value: mlp_stage1_sweep
+  batch_size_train:
+    value: 64
+  batch_size_test:
+    value: 256
+  epochs:
+    value: 80
+  threshold:
+    value: 0.5
+  seed:
+    value: 42
+  loss_type:
+    value: bce
+  use_early_stopping:
+    value: true
+  use_batch_norm:
+    value: false
+  use_skip_connection:
+    value: false
+  hidden_dims:
+    values:
+      - [64]
+      - [128, 64]
+      - [128, 128, 64]
+      - [256, 128, 64]
+  dropout_rate:
+    values: [0.1, 0.2, 0.3]
+  learning_rate:
+    values: [0.001, 0.0005, 0.0003]
+  weight_decay:
+    values: [0.0001, 0.001]
+  early_stopping_patience:
+    values: [8, 10, 12]
