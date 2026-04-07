@@ -1,8 +1,8 @@
-numpy
-pandas
-matplotlib
+numpy~=2.4.4
+pandas~=3.0.2
+matplotlib~=3.10.8
 seaborn
-scipy
-scikit-learn
-torch
-wandb
+scipy~=1.17.1
+scikit-learn~=1.8.0
+torch~=2.11.0+cu126
+wandb~=0.25.0
