@@ -146,7 +146,6 @@ venv.bak/
 
 wandb/
 artifacts/
-checkpoints/
 wandb_local/
 dataset_utils/
 test.py
