@@ -149,6 +149,9 @@ artifacts/
 wandb_local/
 dataset_utils/
 test.py
+cell_images
+dataset_31_credit-g.arff
+
 # Spyder project settings
 .spyderproject
 .spyproject
